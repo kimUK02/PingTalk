@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_SendMassageDialog_t {
-    QByteArrayData data[5];
-    char stringdata0[60];
+    QByteArrayData data[6];
+    char stringdata0[87];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,11 +35,13 @@ QT_MOC_LITERAL(0, 0, 17), // "SendMassageDialog"
 QT_MOC_LITERAL(1, 18, 8), // "finished"
 QT_MOC_LITERAL(2, 27, 0), // ""
 QT_MOC_LITERAL(3, 28, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(4, 50, 9) // "on_recved"
+QT_MOC_LITERAL(4, 50, 29), // "on_SendMassageDialog_finished"
+QT_MOC_LITERAL(5, 80, 6) // "result"
 
     },
     "SendMassageDialog\0finished\0\0"
-    "on_pushButton_clicked\0on_recved"
+    "on_pushButton_clicked\0"
+    "on_SendMassageDialog_finished\0result"
 };
 #undef QT_MOC_LITERAL
 
@@ -68,7 +70,7 @@ static const uint qt_meta_data_SendMassageDialog[] = {
 
  // slots: parameters
     QMetaType::Void,
-    QMetaType::Void, QMetaType::QString,    2,
+    QMetaType::Void, QMetaType::Int,    5,
 
        0        // eod
 };
@@ -81,7 +83,6 @@ void SendMassageDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, in
         switch (_id) {
         case 0: _t->finished(); break;
         case 1: _t->on_pushButton_clicked(); break;
-        case 2: _t->on_recved((*reinterpret_cast< QString(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {

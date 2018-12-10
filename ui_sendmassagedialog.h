@@ -81,6 +81,9 @@ public:
     void retranslateUi(QDialog *SendMassageDialog)
     {
         SendMassageDialog->setWindowTitle(QApplication::translate("SendMassageDialog", "Dialog", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        SendMassageDialog->setToolTip(QApplication::translate("SendMassageDialog", "<html><head>hello<head/><body><p><br/></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
         label->setText(QApplication::translate("SendMassageDialog", "To :", Q_NULLPTR));
         pushButton->setText(QApplication::translate("SendMassageDialog", "SEND", Q_NULLPTR));
     } // retranslateUi

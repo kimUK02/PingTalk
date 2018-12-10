@@ -414,6 +414,7 @@ mainwindow.o: ../PingTalk/mainwindow.cpp ../PingTalk/mainwindow.h \
 
 sendmassagedialog.o: ../PingTalk/sendmassagedialog.cpp ../PingTalk/sendmassagedialog.h \
 		../PingTalk/recvmassage.h \
+		../PingTalk/mainwindow.h \
 		ui_sendmassagedialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sendmassagedialog.o ../PingTalk/sendmassagedialog.cpp
 
